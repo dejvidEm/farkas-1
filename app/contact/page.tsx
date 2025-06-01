@@ -1,13 +1,13 @@
 "use client"
 
 import type React from "react"
-import AnimatedSection from "@/app/components/animated-section"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { MapPin, Phone, Mail } from "lucide-react"
 import Image from "next/image"
+import GoogleMapComponent from "../components/google-map"
 
 export default function ContactPage() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -18,11 +18,11 @@ export default function ContactPage() {
 
   return (
     <div className="bg-white">
-      <AnimatedSection className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: "url('/placeholder.svg?width=1920&height=400')",
+            backgroundImage: "url('/abstract-medical-blue-waves.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -35,9 +35,9 @@ export default function ContactPage() {
             Sme tu pre vás. Obráťte sa na nás s akýmikoľvek otázkami alebo pre objednanie termínu.
           </p>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl">
@@ -103,18 +103,12 @@ export default function ContactPage() {
                 </ul>
               </div>
               <div className="h-64 rounded-3xl overflow-hidden shadow-lg">
-                <Image
-                  src="/placeholder.svg?width=600&height=400"
-                  alt="Mapa umiestnenia kliniky"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
+                <GoogleMapComponent />
               </div>
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
     </div>
   )
 }

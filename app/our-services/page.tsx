@@ -1,5 +1,4 @@
 import CtaBanner from "@/app/components/cta-banner"
-import AnimatedSection from "@/app/components/animated-section"
 import { CheckSquare } from "lucide-react"
 
 const ServiceItem = ({ name, description }: { name: string; description: string }) => (
@@ -36,7 +35,7 @@ export default function OurServicesPage() {
 
   return (
     <div className="bg-white">
-      <AnimatedSection className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -52,9 +51,9 @@ export default function OurServicesPage() {
             zabezpečenie najlepších možných výsledkov pre našich pacientov.
           </p>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -62,7 +61,7 @@ export default function OurServicesPage() {
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
       <CtaBanner />
     </div>

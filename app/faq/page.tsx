@@ -1,5 +1,4 @@
 import CtaBanner from "@/app/components/cta-banner"
-import AnimatedSection from "@/app/components/animated-section"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function FAQPage() {
@@ -33,7 +32,7 @@ export default function FAQPage() {
 
   return (
     <div className="bg-white">
-      <AnimatedSection className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -50,9 +49,9 @@ export default function FAQPage() {
             Nájdite odpovede na bežné otázky o našich službách, termínoch a chirurgických zákrokoch.
           </p>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
@@ -71,7 +70,7 @@ export default function FAQPage() {
             </Accordion>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
       <CtaBanner />
     </div>

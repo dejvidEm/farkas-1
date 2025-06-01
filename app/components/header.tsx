@@ -36,7 +36,7 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white md:bg-white/80 md:backdrop-blur-lg">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Logo />
         <nav className="hidden items-center space-x-2 md:flex">

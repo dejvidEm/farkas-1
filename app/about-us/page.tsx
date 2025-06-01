@@ -1,12 +1,11 @@
 import CtaBanner from "@/app/components/cta-banner"
-import AnimatedSection from "@/app/components/animated-section"
 import Image from "next/image"
 import { Users, Award, HeartHandshake } from "lucide-react"
 
 export default function AboutUsPage() {
   return (
     <div className="bg-white">
-      <AnimatedSection className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -23,9 +22,9 @@ export default function AboutUsPage() {
             Oddaní excelentnosti v chirurgickej starostlivosti, spájajúc odbornosť súcitným prístupom k blahu pacienta.
           </p>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -68,7 +67,7 @@ export default function AboutUsPage() {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
       <CtaBanner />
     </div>

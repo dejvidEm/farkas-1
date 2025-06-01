@@ -11,7 +11,7 @@ const FeatureCard = ({
   icon: Icon,
 }: { title: string; description: string; icon: React.ElementType }) => (
   <div className="flex flex-col items-center p-6 text-center bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-themeBlue/10 hover:border-themeBlue/20">
-    <div className="mb-4 rounded-full bg-gradient-to-br from-themeBlue/90 to-themeBlue p-4 text-white">
+    <div className="mb-4 rounded-full bg-gradient-to-br from-themeBlue/30 to-themeBlue-dark p-4 text-white">
       <Icon className="h-8 w-8" />
     </div>
     <h3 className="mb-2 text-xl font-semibold text-gray-900">{title}</h3>
@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <AnimatedSection className="py-16 md:py-24 bg-gradient-to-br from-themeBlue/10 to-themeBlue/5 relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-themeBlue/10 to-themeBlue/5 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-themeBlue/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
           <div className="absolute top-0 -right-4 w-72 h-72 bg-themeBlue/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -55,7 +55,7 @@ export default function HomePage() {
             />
           </div>
         </div>
-      </AnimatedSection>
+      </section>
       <CoursesSlider />
       <CtaBanner />
     </>

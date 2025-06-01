@@ -38,7 +38,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
+              className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
             >
               Vedení <span className="brush-stroke">Precíznosťou</span>,
               <br />
@@ -57,7 +57,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="w-[200px] sm:w-[300px] -ml-12"
+              className="w-[200px] sm:w-[300px] ml-[20%] sm:-ml-12"
             >
               <img src="/podpis1.png" alt="podpis_Farkas" />
             </motion.div>
@@ -65,7 +65,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col gap-4 min-[400px]:flex-row"
+              className="flex flex-col gap-4 sm:min-[400px]:flex-row"
             >
               <Button
                 asChild
@@ -94,7 +94,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="relative mx-auto aspect-[4/5] w-[400px] max-w-md overflow-visible lg:max-w-none"
+            className="relative mx-auto my-8 sm:my-0 aspect-[4/5] w-[250px] sm:w-[400px] max-w-md overflow-visible lg:max-w-none"
             style={{ y: imageY }}
           >
             {/* Obrázok */}
@@ -109,10 +109,10 @@ export default function HeroSection() {
             </div>
 
             {/* Vonkajší box hore vpravo */}
-            <div className="absolute -top-10 -right-10 h-24 w-24 rounded-xl bg-themeBlue/10 backdrop-blur-md shadow-md" />
+            <div className="absolute -top-10 -right-10 w-16 h-16 sm:h-24 w-16 h-16 sm:w-24 rounded-xl bg-themeBlue/10 backdrop-blur-md shadow-md" />
 
             {/* Vonkajší box dolu vľavo */}
-            <div className="absolute -bottom-10 -left-10 h-24 w-24 rounded-xl bg-themeBlue/20 backdrop-blur-sm shadow-md" />
+            <div className="absolute -bottom-10 -left-10 w-16 h-16 sm:h-24 w-16 h-16 sm:w-24 rounded-xl bg-themeBlue/20 backdrop-blur-sm shadow-md" />
           </motion.div>
         </div>
       </div>

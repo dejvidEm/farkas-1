@@ -1,6 +1,5 @@
 import Link from "next/link"
 import CtaBanner from "@/app/components/cta-banner"
-import AnimatedSection from "@/app/components/animated-section"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 
@@ -27,11 +26,11 @@ export default function PriceListPage() {
 
   return (
     <div className="bg-white">
-      <AnimatedSection className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-themeGray relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: "url('/placeholder.svg?width=1920&height=400')",
+            backgroundImage: "url('/abstract-medical-blue-waves.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -45,19 +44,19 @@ export default function PriceListPage() {
             líšiť v závislosti od individuálnych potrieb.
           </p>
         </div>
-      </AnimatedSection>
+      </section>
 
-      <AnimatedSection className="py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-3xl shadow-xl">
-            <p className="text-sm text-gray-500 mb-6">
+            <div className="text-sm text-gray-500 mb-6">
               <Badge variant="outline" className="mr-2">
                 Upozornenie
               </Badge>
               Nižšie uvedené ceny sú odhadované. Personalizovaná cenová ponuka bude poskytnutá po vašej konzultácii.
               Ceny sa môžu zmeniť bez predchádzajúceho upozornenia. Poistné krytie môže ovplyvniť vaše výdavky z
               vlastného vrecka.
-            </p>
+            </div>
             <Table>
               <TableHeader>
                 <TableRow>
@@ -85,7 +84,7 @@ export default function PriceListPage() {
             </p>
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
       <CtaBanner />
     </div>
