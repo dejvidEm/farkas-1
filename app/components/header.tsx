@@ -60,6 +60,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="hidden items-center space-x-2 md:flex">
+        <Link href="/contact" passHref className="w-full">
           <Button
             variant="outline"
             className="rounded-full border-themeBlue text-themeBlue hover:bg-themeBlue-light hover:text-themeBlue-dark"
@@ -67,6 +68,7 @@ export default function Header() {
             Objednať sa
             <CalendarDays className="ml-2 h-4 w-4" />
           </Button>
+          </Link>
           <Link href="/faq" passHref>
             <Button variant="default" size="icon" className="rounded-full bg-themeBlue hover:bg-themeBlue-dark">
               <HelpCircle className="h-5 w-5 text-white" />
@@ -112,6 +114,7 @@ export default function Header() {
               ))}
             </nav>
             <div className="mt-auto flex flex-col space-y-3 pt-6">
+            <Link href="/contact" passHref className="w-full">  
               <Button
                 variant="outline"
                 className="w-full rounded-full border-themeBlue text-themeBlue hover:bg-themeBlue-light hover:text-themeBlue-dark py-3 text-base"
@@ -119,6 +122,7 @@ export default function Header() {
                 Objednať sa
                 <CalendarDays className="ml-2 h-4 w-4" />
               </Button>
+              </Link>
               <Link href="/faq" passHref className="w-full">
                 <Button
                   variant="default"
