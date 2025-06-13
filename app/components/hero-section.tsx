@@ -22,7 +22,7 @@ export default function HeroSection() {
   const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]) // Move image up by 20% of its height as section scrolls
 
   return (
-    <AnimatedSection ref={sectionRef} className="w-full bg-white py-12 md:py-24 lg:py-32 overflow-hidden">
+    <AnimatedSection ref={sectionRef} className="w-full py-12 bg-[#8da4d0] md:py-24 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 xl:gap-24">
           <div className="flex flex-col justify-center space-y-6">
@@ -48,7 +48,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="max-w-xl text-lg text-gray-600 md:text-xl"
+              className="max-w-xl text-lg text-white md:text-xl"
             >
               Zažite prvotriednu chirurgickú odbornosť s pokročilými technikami, personalizovanou starostlivosťou a
               záväzkom k vášmu blahu.
@@ -109,10 +109,10 @@ export default function HeroSection() {
             </div>
 
             {/* Vonkajší box hore vpravo */}
-            <div className="absolute -top-10 -right-10 w-16 h-16 sm:h-24 w-16 h-16 sm:w-24 rounded-xl bg-themeBlue/10 backdrop-blur-md shadow-md" />
+            <div className="absolute -top-10 -right-10 w-16 h-16 sm:h-24 w-16 h-16 sm:w-24 rounded-xl bg-themeBlue/30 backdrop-blur-md shadow-md" />
 
             {/* Vonkajší box dolu vľavo */}
-            <div className="absolute -bottom-10 -left-10 w-16 h-16 sm:h-24 w-16 h-16 sm:w-24 rounded-xl bg-themeBlue/20 backdrop-blur-sm shadow-md" />
+            <div className="absolute -bottom-10 -left-10 w-16 h-16 sm:h-24 w-16 h-16 sm:w-24 rounded-xl bg-themeBlue/30 backdrop-blur-sm shadow-md" />
           </motion.div>
         </div>
       </div>

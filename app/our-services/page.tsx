@@ -1,4 +1,5 @@
 import CtaBanner from "@/app/components/cta-banner"
+import { ParallaxSection } from "@/components/ParallaxSection";
 import { CheckSquare } from "lucide-react"
 
 const ServiceItem = ({ name, description }: { name: string; description: string }) => (
@@ -53,7 +54,10 @@ export default function OurServicesPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <ParallaxSection imagePosition="left" imageSrc={"/third.jpg"} heading={"Niečo o Nás"} text={"Sme moderná chirurgická ambulancia postavená na presnosti, empatii a technológiách 21. storočia. Každý pacient je pre nás individuálny prípad, nie len meno v kalendári. Veríme, že aj chirurgia môže byť prístupná, rýchla a komfortná — bez dlhého čakania, bez zbytočného stresu, zato s dôrazom na detail a ľudský prístup. Naším cieľom nie je len vyriešiť zdravotný problém, ale spraviť to tak, aby ste sa cítili informovaní a v dobrých rukách. Neustále sledujeme nové postupy a medicínske inovácie, aby sme vám priniesli to najlepšie, čo dnešná medicína ponúka."}/>
+
+      <section className="py-16 md:py-24 flex flex-col items-center justify-center">
+        <h2 className="text-3xl font-semibold mb-12 text-gray-800">Naše Služby</h2>
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (

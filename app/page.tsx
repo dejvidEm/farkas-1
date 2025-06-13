@@ -4,6 +4,8 @@ import CtaBanner from "@/app/components/cta-banner"
 import AnimatedSection from "./components/animated-section"
 import { CheckCircle, Microscope, Stethoscope, Heart } from "lucide-react"
 import { CoursesSlider } from "./components/slider"
+import { ParallaxSection } from "@/components/ParallaxSection"
+import SplitImageSection from "./components/split-image-section"
 
 const FeatureCard = ({
   title,
@@ -23,6 +25,23 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <ParallaxSection imagePosition="right" imageSrc={"/second.jpg"} heading={"Chirurgia bez stresu. Presne, rýchlo, ľudsky."} text={"Naša ambulancia spája skúsené ruky s technológiami dneška. Rýchla diagnostika, šetrné zákroky a individuálny prístup bez zbytočného stresu. Chirurgia, ktorá rešpektuje váš čas aj vaše zdravie."}/>
+      <SplitImageSection
+        leftImage={{
+          src: "/third.jpg",
+          alt: "Chirurgická starostlivosť",
+          heading: "Odborná Starostlivosť",
+          buttonText: "Zistiť Viac",
+          buttonLink: "/our-services"
+        }}
+        rightImage={{
+          src: "/second.jpg",
+          alt: "Kontaktujte nás",
+          heading: "Objednajte Sa",
+          buttonText: "Kontaktujte Nás",
+          buttonLink: "/contact"
+        }}
+      />
       <section className="py-16 md:py-24 bg-gradient-to-br from-themeBlue/10 to-themeBlue/5 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 -left-4 w-72 h-72 bg-themeBlue/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>

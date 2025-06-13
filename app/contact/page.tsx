@@ -82,15 +82,15 @@ export default function ContactPage() {
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <MapPin className="h-5 w-5 text-themeBlue mr-3 mt-1 flex-shrink-0" />
-                    <span>Ulica Zdravia 123, MedCity, PSČ 45678</span>
+                    <span>Nemocničná 1, Šaľa, PSČ 927 01</span>
                   </li>
                   <li className="flex items-center">
                     <Phone className="h-5 w-5 text-themeBlue mr-3 flex-shrink-0" />
-                    <span>(123) 456-7890</span>
+                    <span>+421 912 345 678</span>
                   </li>
                   <li className="flex items-center">
                     <Mail className="h-5 w-5 text-themeBlue mr-3 flex-shrink-0" />
-                    <span>info@surgicare.com</span>
+                    <span>info@farkasjozef.com</span>
                   </li>
                 </ul>
               </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
               </div>
               <div className="rounded-3xl overflow-hidden shadow-lg">
               <div className="mt-8">
-                  <h3 className="text-xl font-semibold mb-3">Find Us On Map</h3>
+                  <h3 className="text-xl font-semibold mb-3">Nájdete Nás na mape</h3>
                   <div className="aspect-video rounded-lg overflow-hidden border border-border/40">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.5!2d17.8747!3d48.1514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713f5f5f5f5f5f5%3A0x4713f5f5f5f5f5f5!2sPoliklinika%20NSK%20%C5%A0a%C4%BEa%2C%20Nemocni%C4%8Dn%C3%A1%20833%2F1%2C%20927%2001%20%C5%A0a%C4%BEa!5e0!3m2!1ssk!2ssk!4v1710864000000"

@@ -7,6 +7,7 @@ import { Menu, X, HelpCircle, CalendarDays } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import Logo from "./logo"
 import { Button } from "@/components/ui/button"
+import React from "react"
 
 const navLinks = [
   { href: "/", label: "Domov" },
@@ -40,23 +41,27 @@ export default function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Logo />
         <nav className="hidden items-center space-x-2 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => {
-                if (typeof window !== "undefined") {
-                  window.scrollTo(0, 0)
-                }
-              }}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                isActive(link.href)
-                  ? "bg-themeBlue text-white shadow-md"
-                  : "text-gray-600 hover:bg-themeGray hover:text-gray-900"
-              }`}
-            >
-              {link.label}
-            </Link>
+          {navLinks.map((link, index) => (
+            <React.Fragment key={link.href}>
+              <Link
+                href={link.href}
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    window.scrollTo(0, 0)
+                  }
+                }}
+                className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  isActive(link.href)
+                    ? "bg-themeBlue text-white shadow-md"
+                    : "text-gray-600 hover:bg-themeGray hover:text-gray-900"
+                }`}
+              >
+                {link.label}
+              </Link>
+              {index < navLinks.length - 1 && (
+                <div className="h-6 w-[1px] bg-themeBlue/30" />
+              )}
+            </React.Fragment>
           ))}
         </nav>
         <div className="hidden items-center space-x-2 md:flex">
@@ -93,24 +98,28 @@ export default function Header() {
             style={{ top: "80px" }} // Start below header
           >
             <nav className="mt-6 flex flex-col space-y-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`rounded-full px-4 py-3 text-lg font-medium transition-colors ${
-                    isActive(link.href)
-                      ? "bg-themeBlue text-white shadow-md"
-                      : "text-gray-700 hover:bg-themeGray hover:text-gray-900"
-                  }`}
-                  onClick={() => {
-                    if (typeof window !== "undefined") {
-                      window.scrollTo(0, 0)
-                    }
-                    setMobileMenuOpen(false)
-                  }}
-                >
-                  {link.label}
-                </Link>
+              {navLinks.map((link, index) => (
+                <React.Fragment key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={`rounded-full px-4 py-3 text-lg font-medium transition-colors ${
+                      isActive(link.href)
+                        ? "bg-themeBlue text-white shadow-md"
+                        : "text-gray-700 hover:bg-themeGray hover:text-gray-900"
+                    }`}
+                    onClick={() => {
+                      if (typeof window !== "undefined") {
+                        window.scrollTo(0, 0)
+                      }
+                      setMobileMenuOpen(false)
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                  {index < navLinks.length - 1 && (
+                    <div className="h-[1px] w-full bg-themeBlue/30" />
+                  )}
+                </React.Fragment>
               ))}
             </nav>
             <div className="mt-auto flex flex-col space-y-3 pt-6">
