@@ -124,7 +124,7 @@ export function CardSlider({ title, description, cards, linkText = "Dozvedieť s
             <button
               key={index}
               className={`size-2.5 rounded-full transition-all duration-300 ${
-                index === selectedIndex ? "bg-primary dark:bg-sky-400 scale-125" : "bg-muted-foreground/30 dark:bg-slate-600"
+                index === selectedIndex ? "bg-[#6b5a4b] dark:bg-[#6b5a4b] scale-125" : "bg-muted-foreground/30 dark:bg-slate-600"
               }`}
               onClick={() => emblaApi?.scrollTo(index)}
               aria-label={`Prejsť na snímku ${index + 1}`}

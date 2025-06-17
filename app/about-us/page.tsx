@@ -39,18 +39,18 @@ export default function AboutUsPage() {
                 pozornosť, jasnú komunikáciu a komplexnú podporu počas celej svojej chirurgickej cesty.
               </p>
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="flex flex-col items-center text-center p-4 rounded-xl bg-themeBlue-light">
-                  <Users className="h-10 w-10 text-themeBlue mb-2" />
+                <div className="flex flex-col items-center text-center p-4 rounded-xl bg-[#8b7a6b] bg-opacity-20">
+                  <Users className="h-10 w-10 text-[#6b5a4b] mb-2" />
                   <h4 className="font-semibold text-gray-800">Odborný Tím</h4>
                   <p className="text-sm text-gray-600">Certifikovaní chirurgovia a oddaný personál.</p>
                 </div>
-                <div className="flex flex-col items-center text-center p-4 rounded-xl bg-themeBlue-light">
-                  <Award className="h-10 w-10 text-themeBlue mb-2" />
+                <div className="flex flex-col items-center text-center p-4 rounded-xl bg-[#8b7a6b] bg-opacity-20">
+                  <Award className="h-10 w-10 text-[#6b5a4b] mb-2" />
                   <h4 className="font-semibold text-gray-800">Kvalitná Starostlivosť</h4>
                   <p className="text-sm text-gray-600">Záväzok k bezpečnosti a vynikajúcim výsledkom.</p>
                 </div>
-                <div className="flex flex-col items-center text-center p-4 rounded-xl bg-themeBlue-light">
-                  <HeartHandshake className="h-10 w-10 text-themeBlue mb-2" />
+                <div className="flex flex-col items-center text-center p-4 rounded-xl bg-[#8b7a6b] bg-opacity-20">
+                  <HeartHandshake className="h-10 w-10 text-[#6b5a4b] mb-2" />
                   <h4 className="font-semibold text-gray-800">Pacient na Prvom Mieste</h4>
                   <p className="text-sm text-gray-600">Súcitný a personalizovaný prístup.</p>
                 </div>

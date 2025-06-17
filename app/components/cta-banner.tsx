@@ -5,7 +5,7 @@ import AnimatedSection from "./animated-section"
 
 export default function CtaBanner() {
   return (
-    <AnimatedSection className="bg-themeBlue-light py-16 md:py-24">
+    <AnimatedSection className="bg-brown-100 py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Ste Pripravení Prekonzultovať Vaše Chirurgické Potreby?

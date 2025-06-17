@@ -48,31 +48,38 @@ export default function Header() {
           {navLinks.map((link, index) => {
             if (link.label === "Naše Služby") {
               return (
-                <div key={link.href} className="relative group">
-                  <span
-                    className={`rounded-full px-4 py-2 text-sm font-medium cursor-pointer transition-colors ${
-                      isActive(link.href)
-                        ? "bg-themeBlue text-white shadow-md"
-                        : "text-gray-600 hover:bg-themeGray hover:text-gray-900"
-                    }`}
-                  >
-                    {link.label}
-                  </span>
-                  <div className="absolute left-0 mt-2 w-72 rounded-md bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50">
-                    <ul className="py-2">
-                      {serviceDropdown.map((service) => (
-                        <li key={service.id}>
-                          <Link
-                            href={`/our-services#${service.id}`}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-themeGray hover:text-gray-900"
-                          >
-                            {service.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                <React.Fragment key={link.href}>
+                  <div className="relative group">
+                    <Link
+                      href={link.href}
+                      className={`rounded-full px-4 py-2 text-sm font-medium cursor-pointer transition-colors ${
+                        isActive(link.href)
+                          ? "bg-[#b08968] text-white shadow-md"
+                          : "text-gray-600 hover:bg-themeGray hover:text-gray-900"
+                      }`}
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      {link.label}
+                    </Link>
+                    <div className="absolute left-0 mt-2 w-72 rounded-md bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50">
+                      <ul className="py-2">
+                        {serviceDropdown.map((service) => (
+                          <li key={service.id}>
+                            <Link
+                              href={`/our-services#${service.id}`}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-themeGray hover:text-gray-900"
+                            >
+                              {service.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                  {index < navLinks.length - 1 && (
+                    <div className="h-6 w-[1px] bg-themeBlue/30" />
+                  )}
+                </React.Fragment>
               )
             }
 
@@ -83,7 +90,7 @@ export default function Header() {
                   onClick={() => window.scrollTo(0, 0)}
                   className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                     isActive(link.href)
-                      ? "bg-themeBlue text-white shadow-md"
+                      ? "bg-[#b08968] text-white shadow-md"
                       : "text-gray-600 hover:bg-themeGray hover:text-gray-900"
                   }`}
                 >
@@ -102,14 +109,14 @@ export default function Header() {
           <Link href="/contact" passHref className="w-full">
             <Button
               variant="outline"
-              className="rounded-full border-themeBlue text-themeBlue hover:bg-themeBlue-light hover:text-themeBlue-dark"
+              className="rounded-full border-black text-black hover:bg-gray-50 hover:text-black/80"
             >
               Objednať sa
               <CalendarDays className="ml-2 h-4 w-4" />
             </Button>
           </Link>
           <Link href="/faq" passHref>
-            <Button variant="default" size="icon" className="rounded-full bg-themeBlue hover:bg-themeBlue-dark">
+            <Button variant="default" size="icon" className="rounded-full bg-black/80 hover:bg-black">
               <HelpCircle className="h-5 w-5 text-white" />
             </Button>
           </Link>

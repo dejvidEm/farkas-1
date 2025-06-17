@@ -70,7 +70,7 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full rounded-full bg-themeBlue py-3 text-base hover:bg-themeBlue-dark"
+                  className="w-full rounded-full bg-[#6b5a4b] py-3 text-base hover:bg-[#8b7a6b]"
                 >
                   Odoslať Správu
                 </Button>
@@ -81,15 +81,15 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Informácie o Klinike</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
-                    <MapPin className="h-5 w-5 text-themeBlue mr-3 mt-1 flex-shrink-0" />
+                    <MapPin className="h-5 w-5 text-[#6b5a4b] mr-3 mt-1 flex-shrink-0" />
                     <span>Nemocničná 1, Šaľa, PSČ 927 01</span>
                   </li>
                   <li className="flex items-center">
-                    <Phone className="h-5 w-5 text-themeBlue mr-3 flex-shrink-0" />
+                    <Phone className="h-5 w-5 text-[#6b5a4b] mr-3 flex-shrink-0" />
                     <span>+421 907 557 852</span>
                   </li>
                   <li className="flex items-center">
-                    <Mail className="h-5 w-5 text-themeBlue mr-3 flex-shrink-0" />
+                    <Mail className="h-5 w-5 text-[#6b5a4b] mr-3 flex-shrink-0" />
                     <span>jozef.farkas.chirurgia@gmail.com</span>
                   </li>
                 </ul>
@@ -97,8 +97,8 @@ export default function ContactPage() {
               <div className="bg-white p-8 rounded-3xl shadow-xl">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Ordinačné Hodiny</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>Po - Pia: 8:00 - 15:00</li>
-                  <li>So: Na objednávku</li>
+                  <li>Po - Pia: 8:00 - 15:00 a od 15:00 - 16:00 podľa objednávky</li>
+                  <li>So: Zatvorené</li>
                   <li>Ne: Zatvorené</li>
                 </ul>
               </div>
