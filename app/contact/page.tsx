@@ -86,19 +86,19 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-center">
                     <Phone className="h-5 w-5 text-themeBlue mr-3 flex-shrink-0" />
-                    <span>+421 912 345 678</span>
+                    <span>+421 907 557 852</span>
                   </li>
                   <li className="flex items-center">
                     <Mail className="h-5 w-5 text-themeBlue mr-3 flex-shrink-0" />
-                    <span>info@farkasjozef.com</span>
+                    <span>jozef.farkas.chirurgia@gmail.com</span>
                   </li>
                 </ul>
               </div>
               <div className="bg-white p-8 rounded-3xl shadow-xl">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Ordinačné Hodiny</h3>
                 <ul className="space-y-2 text-gray-600">
-                  <li>Po - Pia: 9:00 - 17:00</li>
-                  <li>So: 10:00 - 14:00 (Na objednávku)</li>
+                  <li>Po - Pia: 8:00 - 15:00</li>
+                  <li>So: Na objednávku</li>
                   <li>Ne: Zatvorené</li>
                 </ul>
               </div>

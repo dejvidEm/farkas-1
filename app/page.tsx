@@ -25,7 +25,14 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <ParallaxSection imagePosition="right" imageSrc={"/second.jpg"} heading={"Chirurgia bez stresu. Presne, rýchlo, ľudsky."} text={"Naša ambulancia spája skúsené ruky s technológiami dneška. Rýchla diagnostika, šetrné zákroky a individuálny prístup bez zbytočného stresu. Chirurgia, ktorá rešpektuje váš čas aj vaše zdravie."}/>
+      <div className="bg-white py-16 px-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Chirurgia bez stresu. Presne, rýchlo, ľudsky.
+        </h2>
+        <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
+          Naša ambulancia spája skúsené ruky s technológiami dneška. Rýchla diagnostika, šetrné zákroky a individuálny prístup bez zbytočného stresu. Chirurgia, ktorá rešpektuje váš čas aj vaše zdravie.
+        </p>
+      </div>
       <SplitImageSection
         leftImage={{
           src: "/third.jpg",
@@ -44,9 +51,9 @@ export default function HomePage() {
       />
       <section className="py-16 md:py-24 bg-gradient-to-br from-themeBlue/10 to-themeBlue/5 relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 -left-4 w-72 h-72 bg-themeBlue/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div className="absolute top-0 -right-4 w-72 h-72 bg-themeBlue/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-themeBlue/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute top-0 -left-4 w-72 h-72 bg-[#7f5539]/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-[#7f5539]/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-[#7f5539]/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="mb-12 text-center">

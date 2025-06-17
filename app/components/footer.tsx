@@ -10,9 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <Logo />
+            
             <p className="mt-4 text-gray-600 text-sm max-w-xs">
               Poskytovanie výnimočnej chirurgickej starostlivosti s precíznosťou, odbornosťou a súcitom.
             </p>
+            <img src="/signature.png" alt="podpis_Farkas" className="w-52 h-auto" />
             <div className="mt-6 flex space-x-4">
               <Link href="#" className="text-gray-500 hover:text-themeBlue transition-colors">
                 <Facebook size={20} />
@@ -58,17 +60,17 @@ export default function Footer() {
           <div className="md:col-span-3">
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Kontaktné Informácie</h3>
             <ul role="list" className="mt-4 space-y-3 text-sm text-gray-600">
-              <li>Ulica Zdravia 123, MedCity, PSČ 45678</li>
-              <li>Telefón: (123) 456-7890</li>
-              <li>Email: info@surgicare.com</li>
+              <li>Nemocničná 1, Šaľa, PSČ 927 01</li>
+              <li>Telefón: +421 907 557 852</li>
+              <li>Email: jozef.farkas.chirurgia@gmail.com</li>
             </ul>
           </div>
 
           <div className="md:col-span-3">
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Ordinačné Hodiny</h3>
             <ul role="list" className="mt-4 space-y-3 text-sm text-gray-600">
-              <li>Po - Pia: 9:00 - 17:00</li>
-              <li>So: 10:00 - 14:00 (Na objednávku)</li>
+              <li>Po - Pia: 8:00 - 15:00</li>
+              <li>So: Na objednávku</li>
               <li>Ne: Zatvorené</li>
             </ul>
           </div>

@@ -42,7 +42,7 @@ export default function SplitImageSection({ leftImage, rightImage }: SplitImageS
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-white text-themeBlue px-8 py-6 text-base font-semibold shadow-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="rounded-full bg-white text-[#b08968] px-8 py-6 text-base font-semibold shadow-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               <Link href={leftImage.buttonLink}>
                 {leftImage.buttonText}
@@ -67,7 +67,7 @@ export default function SplitImageSection({ leftImage, rightImage }: SplitImageS
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-white text-themeBlue px-8 py-6 text-base font-semibold shadow-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="rounded-full bg-white text-[#b08968] px-8 py-6 text-base font-semibold shadow-lg hover:bg-gray-100 transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               <Link href={rightImage.buttonLink}>
                 {rightImage.buttonText}

@@ -18,7 +18,7 @@ export default function CtaBanner() {
           <Button
             asChild
             size="lg"
-            className="rounded-full bg-themeBlue px-10 py-6 text-lg font-semibold text-white shadow-lg hover:bg-themeBlue-dark transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="rounded-full bg-[#b08968] px-10 py-6 text-lg font-semibold text-white shadow-lg hover:bg-[#7f5539] transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <Link href="/contact">
               Kontaktujte Nás Teraz
