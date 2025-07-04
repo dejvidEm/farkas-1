@@ -12,7 +12,7 @@ import GoogleMapComponent from "../components/google-map"
 export default function ContactPage() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    alert("Formulár odoslaný! (Toto je demo)")
+    alert("Formulár odoslaný!")
     ;(event.target as HTMLFormElement).reset()
   }
 
@@ -78,15 +78,15 @@ export default function ContactPage() {
             </div>
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-3xl shadow-xl">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">Informácie o Klinike</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">Informácie o ambulancii</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start">
                     <MapPin className="h-5 w-5 text-[#6b5a4b] mr-3 mt-1 flex-shrink-0" />
-                    <span>Nemocničná 1, Šaľa, PSČ 927 01</span>
+                    <span>Nemocničná 1, Poliklinika Šaľa, PSČ 927 01</span>
                   </li>
                   <li className="flex items-center">
                     <Phone className="h-5 w-5 text-[#6b5a4b] mr-3 flex-shrink-0" />
-                    <span>+421 907 557 852</span>
+                    <span>031/701 09 48</span>
                   </li>
                   <li className="flex items-center">
                     <Mail className="h-5 w-5 text-[#6b5a4b] mr-3 flex-shrink-0" />

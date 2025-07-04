@@ -6,6 +6,7 @@ import { CheckCircle, Microscope, Stethoscope, Heart } from "lucide-react"
 import { CoursesSlider } from "./components/slider"
 import { ParallaxSection } from "@/components/ParallaxSection"
 import SplitImageSection from "./components/split-image-section"
+import ImageGallery from "./components/image-gallery"
 
 const FeatureCard = ({
   title,
@@ -48,6 +49,27 @@ export default function HomePage() {
           buttonText: "Kontaktujte Nás",
           buttonLink: "/contact"
         }}
+      />
+      <ImageGallery
+        heading="Kde Vás ošetríme"
+        subtitle="Pozrite si naše moderné zariadenie a naše moderné priestory, kde sa staráme o vaše zdravie s maximálnou starostlivosťou a profesionalitou."
+        images={[
+          {
+            src: "/okna.jpg",
+            alt: "Moderné chirurgické zariadenie",
+            title: "Chirurgická Sála"
+          },
+          {
+            src: "/sedacky.jpg",
+            alt: "Náš tím chirurgov",
+            title: "Odborný Tím"
+          },
+          {
+            src: "/dvere.jpg",
+            alt: "Šetrné chirurgické zákroky",
+            title: "Šetrná Chirurgia"
+          }
+        ]}
       />
       <section className="py-16 md:py-24 bg-[#b08968]/10 relative overflow-hidden">
         

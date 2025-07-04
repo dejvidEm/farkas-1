@@ -40,8 +40,7 @@ export default function HeroSection() {
               transition={{ delay: 0.3 }}
               className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
             >
-              Vedení <span className="brush-stroke">Precíznosťou</span>,
-              <br />
+              
               Stvorení Pre Vaše Zdravie
             </motion.h1>
             <motion.p

@@ -13,7 +13,6 @@ const navLinks = [
   { href: "/", label: "Domov" },
   { href: "/our-services", label: "Naše Služby" },
   { href: "/about-us", label: "O Nás" },
-  { href: "/price-list", label: "Cenník" },
   { href: "/contact", label: "Kontakt" },
 ]
 

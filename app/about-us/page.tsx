@@ -30,7 +30,7 @@ export default function AboutUsPage() {
             <div>
               <h2 className="text-3xl font-semibold text-gray-800 mb-4">Naše Poslanie</h2>
               <p className="text-gray-600 mb-4 text-lg">
-                V SurgiCare je naším poslaním poskytovať najvyšší štandard chirurgickej liečby a starostlivosti.
+                Našim poslaním je poskytovať najvyšší štandard chirurgickej liečby a starostlivosti.
                 Zaväzujeme sa využívať pokročilé medicínske technológie a inovatívne chirurgické techniky na zlepšenie
                 zdravia a kvality života našich pacientov.
               </p>
@@ -58,7 +58,7 @@ export default function AboutUsPage() {
             </div>
             <div className="rounded-3xl overflow-hidden shadow-xl aspect-square">
               <Image
-                src="/diverse-medical-team.png"
+                src="/nova.jpg"
                 alt="Tím SurgiCare"
                 width={600}
                 height={600}

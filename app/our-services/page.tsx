@@ -111,7 +111,7 @@ export default function OurServicesPage() {
         ["Chronické rany", "Vredy, diabetická noha, cievne rany"],
         ["Preležaniny a hnisavé kolekcie", "Ošetrenie a liečba podľa lokalizácie"],
         ["Chirurgia konečníka", "Hemoroidy, trhliny, píšťaly, polypy, zápaly"],
-        ["Traumatológia a úrazy", "Zlomeniny, šľachy, popáleniny, rezy, údery"],
+        ["Traumatológia a úrazy", "Zlomeniny, praskliny, šľachy, popáleniny, rezné a tržné rany, krvácajúce rany"],
       ].map(([title, desc], index) => (
         <div
           key={index}

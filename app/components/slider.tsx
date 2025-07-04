@@ -6,7 +6,7 @@ const courses = [
   {
     title: "Moderné pristory",
     description: "Cítite sa počas Vašej liečby ako doma",
-    image: "/2.jpg",
+    image: "/dvere.jpg",
   },
   {
     title: "Skúsení lekári",
@@ -16,12 +16,12 @@ const courses = [
   {
     title: "Moderné vybavenie",
     description: "Používame najmodernejšie vybavenie pre Vašu liečbu",
-    image: "/1.jpg",
+    image: "/sedacky.jpg",
   },
   {
     title: "Moderné pristory",
     description: "Cítite sa počas Vašej liečby ako doma",
-    image: "/2.jpg",
+    image: "/predok.jpg",
   },
   {
     title: "Skúsení lekári",

@@ -15,20 +15,7 @@ export default function Footer() {
               Poskytovanie výnimočnej chirurgickej starostlivosti s precíznosťou, odbornosťou a súcitom.
             </p>
             <img src="/signature.png" alt="podpis_Farkas" className="w-52 h-auto" />
-            <div className="mt-6 flex space-x-4">
-              <Link href="#" className="text-gray-500 hover:text-themeBlue transition-colors">
-                <Facebook size={20} />
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-themeBlue transition-colors">
-                <Twitter size={20} />
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-themeBlue transition-colors">
-                <Linkedin size={20} />
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-themeBlue transition-colors">
-                <Instagram size={20} />
-              </Link>
-            </div>
+
           </div>
 
           <div className="md:col-span-2">
@@ -45,11 +32,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/price-list" className="text-sm text-gray-600 hover:text-themeBlue transition-colors">
-                  Cenník
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" className="text-sm text-gray-600 hover:text-themeBlue transition-colors">
                   Kontakt
                 </Link>
@@ -61,7 +43,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Kontaktné Informácie</h3>
             <ul role="list" className="mt-4 space-y-3 text-sm text-gray-600">
               <li>Nemocničná 1, Šaľa, PSČ 927 01</li>
-              <li>Telefón: +421 907 557 852</li>
+              <li>Telefón: 031/701 09 48</li>
               <li>Email: jozef.farkas.chirurgia@gmail.com</li>
             </ul>
           </div>
@@ -69,9 +51,9 @@ export default function Footer() {
           <div className="md:col-span-3">
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Ordinačné Hodiny</h3>
             <ul role="list" className="mt-4 space-y-3 text-sm text-gray-600">
-              <li>Po - Pia: 8:00 - 15:00</li>
-              <li>So: Na objednávku</li>
-              <li>Ne: Zatvorené</li>
+                  <li>Po - Pia: 8:00 - 15:00 a od 15:00 - 16:00 podľa objednávky</li>
+                  <li>So: Zatvorené</li>
+                  <li>Ne: Zatvorené</li>
             </ul>
           </div>
         </div>
