@@ -55,7 +55,7 @@ export default function HomePage() {
         subtitle="Pozrite si naše moderné zariadenie a naše moderné priestory, kde sa staráme o vaše zdravie s maximálnou starostlivosťou a profesionalitou."
         images={[
           {
-            src: "/okna.jpg",
+            src: "/okna2.png",
             alt: "Moderné chirurgické zariadenie",
             title: "Chirurgická Sála"
           },
