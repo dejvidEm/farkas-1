@@ -60,12 +60,12 @@ export default function HomePage() {
             title: "Chirurgická Sála"
           },
           {
-            src: "/sedacky.jpg",
+            src: "/sedacky2.jpg",
             alt: "Náš tím chirurgov",
             title: "Odborný Tím"
           },
           {
-            src: "/dvere.jpg",
+            src: "/dvere2.jpg",
             alt: "Šetrné chirurgické zákroky",
             title: "Šetrná Chirurgia"
           }
