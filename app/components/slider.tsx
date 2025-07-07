@@ -6,7 +6,7 @@ const courses = [
   {
     title: "Moderné pristory",
     description: "Cítite sa počas Vašej liečby ako doma",
-    image: "/dvere.jpg",
+    image: "/dvere2.jpg",
   },
   {
     title: "Skúsení lekári",
